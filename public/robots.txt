@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: update this host to your live domain after deploying.
+Sitemap: https://jainamshah.vercel.app/sitemap.xml

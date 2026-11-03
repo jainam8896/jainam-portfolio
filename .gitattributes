@@ -1,0 +1,8 @@
+# Normalise line endings. Without this, a repo authored on Windows shows every
+# file as modified when it is cloned on Linux (which is what Vercel builds on).
+* text=auto eol=lf
+
+# Binary assets — never touch these.
+*.pdf binary
+*.png binary
+*.woff2 binary
