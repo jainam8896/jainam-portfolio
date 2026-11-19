@@ -5,8 +5,8 @@
  *
  * TODO LIST (search for "TODO" to find each one):
  *   1. contact.github — add your real GitHub profile URL
- *   2. site.url       — set this to your live domain after deploying, and
- *                       update the matching tags in index.html, robots.txt
+ *   2. site.url       — currently the Vercel URL. If you attach a custom
+ *                       domain, update it here AND in index.html, robots.txt
  *                       and sitemap.xml
  *   3. public/Jainam_Shah_Resume.pdf — replace with your latest resume PDF
  *
@@ -49,8 +49,9 @@ export const site: SiteMeta = {
   location: 'Bengaluru, India',
   availability: 'Open to backend / platform roles',
   openToWork: true,
-  // TODO: replace with your live domain once deployed (used for SEO + JSON-LD).
-  url: 'https://jainamshah.vercel.app',
+  // Live site. If you attach a custom domain, update index.html's canonical /
+  // og:url / twitter:image tags, robots.txt and sitemap.xml to match.
+  url: 'https://jainam-portfolio-seven.vercel.app',
   resumePath: '/Jainam_Shah_Resume.pdf',
   ogImage: '/og-image.png',
 };
@@ -82,7 +83,7 @@ export const heroCommand = 'curl -s https://api.jainamshah.dev/v1/jainam';
 
 export const apiResponse: ApiResponse = {
   role: 'Backend Engineer',
-  experience: '2.5 years',
+  experience: '3 years',
   stack: ['Node.js', 'Express', 'MongoDB', 'Redis', 'MySQL', 'AWS'],
   location: 'Bengaluru, India',
   open_to_work: true,
@@ -94,13 +95,13 @@ export const apiResponse: ApiResponse = {
 
 export const about = {
   paragraphs: [
-    'I am a backend engineer with two and a half years spent close to production — the part of the job where a webhook arrives twice, a flash sale opens at midnight, and an integration between two systems that were never meant to talk has to not lose an order.',
+    'I am a backend engineer with three years spent close to production — the part of the job where a webhook arrives twice, a flash sale opens at midnight, and an integration between two systems that were never meant to talk has to not lose an order.',
     'Most of my work is Node.js and Express over MongoDB and MySQL, with Redis where correctness under concurrency matters. I like problems that have a measurable right answer: zero oversells, idempotent writes, response times that drop and stay down.',
     'I own what I ship. That means writing the business logic, deploying it to AWS, reading the logs when something looks off in production, and leaving behind code the next person can actually follow.',
   ],
   stats: [
     {
-      value: '2.5+',
+      value: '3+',
       label: 'years experience',
       detail: 'Backend engineering, shipped to production',
     },
@@ -185,7 +186,7 @@ export const jobs: Job[] = [
     company: 'Narola Infotech',
     role: 'Back-end Developer (Intern)',
     start: 'Jan 2024',
-    end: 'Jun 2024',
+    end: 'Nov 2024',
     location: 'Gujarat, India',
     summary:
       'Backend features and performance work on an eCommerce shopping application.',
@@ -403,5 +404,5 @@ export const education: Degree[] = [
 export const seo = {
   title: 'Jainam Shah — Backend Engineer (Node.js, Distributed Systems)',
   description:
-    'Backend engineer with 2.5+ years building scalable Node.js APIs, queue-based systems handling 250+ req/s, multi-tenant webhook pipelines and ERP integrations. Based in Bengaluru, India.',
+    'Backend engineer with 3+ years building scalable Node.js APIs, queue-based systems handling 250+ req/s, multi-tenant webhook pipelines and ERP integrations. Based in Bengaluru, India.',
 };
